@@ -17,7 +17,7 @@ for index in range(cantidad_habitaciones):
 
     while True:
         numero_habitacion = input(f"Ingrese el número de la habitación {index + 1} (6 caracteres, sin espacios): ")
-        if len(numero_habitacion) < 6 and (" " in numero_habitacion):
+        if len(numero_habitacion) < 6 or (" " in numero_habitacion):
             print("Error. Debe tener al menos 6 caracteres sin espacios.")
         else:
             break
